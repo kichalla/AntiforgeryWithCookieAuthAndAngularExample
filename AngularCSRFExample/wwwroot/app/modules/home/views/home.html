@@ -1,0 +1,24 @@
+﻿<p><a href="" ng-click="logout()">Logout</a></p>
+
+<div>
+    <label>Post the data using the latest CSRF token having the user claims</label>
+    <div>
+        <div>
+            <label for="Name">Name</label>
+            <div>
+                <input type="text" name="Name" ng-model="name" />
+            </div>
+        </div>
+        <br />
+        <div>
+            <button ng-click="createProduct()">Create Product</button>
+        </div>
+        <br />
+        <div ng-show="showStatus">
+            <b><span ng-bind="statusMessage"></span></b>
+        </div>
+        <div ng-show="showResponseData">
+            <b>Name:</b> <span ng-bind="responseData.name"></span><br />
+        </div>
+    </div>
+</div>
